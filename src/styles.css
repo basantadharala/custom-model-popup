@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(187, 236, 38);
+}
+.content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid red;
+  width: 80%;
+  animation-name: aniMateModal;
+  animation-duration: 0.7s;
+}
+.close-modal-icon {
+  cursor: pointer;
+  font-size: 40px;
+  float: right;
+  font-weight: bold;
+}
+.header {
+  padding: 4px 16px;
+  background-color: #5cb85c;
+  color: #000;
+}
+.body {
+  padding: 2px 16px;
+  height: 200px;
+}
+.footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+@keyframes aniMateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
